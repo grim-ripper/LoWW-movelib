@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>LoWW Movement Library</title>
+  </head>
+  
+  <body>
+ 	This project implements movement path search in a grid of squares or hexagons. Both hexagons
+	(hexes) and squares are tiles, and can be handled as such without knowing precise type. For
+	each of these two tile types, a grid can be created in varying sizes. It will be filled with
+	pre-created tiles. Hexes are placed in the grid in rows, and don't form vertical columns. A
+	tile can have terrain, obstacles, movement events and blocks, which can influence movement in
+	various ways. An obstacle has a template, which can determine multiple tiles which the obstacle
+	resides in, based on a main tile and facing direction. An extension of obstacles are mobile
+	objects, which have movement modes that enable them to move. A mobile object can have several
+	movement modes, but only one at a time is active and in use. Movement modes can have movement
+	modifiers, which can affect movement in various ways. A default movement mode implementation is
+	included. This allows a mobile object to move from each tile to any adjacent tile, and uses a
+	breadth-first search to find all tiles the mobile object can reach.
+  </body>
+</html>
